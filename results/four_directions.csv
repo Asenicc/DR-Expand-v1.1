@@ -1,0 +1,11 @@
+method,source,target,BA_percent,accuracy_percent,samples,seed,epoch,selection
+Recover-and-Resample,N,E,58.45621179825049,56.23220973782772,13350,0,50,fixed_final_epoch_50
+Recover-and-Resample,N,P,74.17676542584863,72.62396694214877,968,0,50,fixed_final_epoch_50
+Recover-and-Resample,EA,N,47.54347468273141,48.637759017651575,5212,0,50,fixed_final_epoch_50
+Recover-and-Resample,EA,P,54.151353861146745,52.99586776859504,968,0,50,fixed_final_epoch_50
+Recover-and-Resample,mean,four_directions,58.58195144199432,,,0,50,fixed_final_epoch_50
+DR-Expand-v1.1,N,E,59.33440499490206,56.9063670411985,13350,0,50,fixed_final_epoch_50
+DR-Expand-v1.1,N,P,78.9515109315883,77.99586776859503,968,0,50,fixed_final_epoch_50
+DR-Expand-v1.1,EA,N,49.08505515730832,50.19186492709132,5212,0,50,fixed_final_epoch_50
+DR-Expand-v1.1,EA,P,55.44078583779436,54.54545454545454,968,0,50,fixed_final_epoch_50
+DR-Expand-v1.1,mean,four_directions,60.70293923039826,,,0,50,fixed_final_epoch_50

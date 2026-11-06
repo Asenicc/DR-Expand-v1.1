@@ -1,0 +1,106 @@
+{
+  "method": "DR-Expand-v1.1",
+  "frozen_at": "2026-10-26T15:42:44+08:00",
+  "seed": 0,
+  "epochs": 50,
+  "smoke": false,
+  "method_config": {
+    "warmup_epochs": 5,
+    "search_steps": 2,
+    "search_step_normalized": 0.5,
+    "relation_penalty": 2.0,
+    "relation_max_relative_rms": 0.08,
+    "backtracking_steps": 8,
+    "supcon_weight": 0.1,
+    "supcon_temperature": 0.1,
+    "teacher_weight": 0.25,
+    "teacher_temperature": 2.0,
+    "teacher_mask": "correct on the original rotated source view; no confidence threshold",
+    "bounds_lower": [
+      -0.16251892949777494,
+      -0.2617993877991494,
+      -0.10536051565782628,
+      -0.10536051565782628,
+      -0.10536051565782628,
+      -0.10536051565782628,
+      -0.10536051565782628,
+      -0.10536051565782628,
+      -0.10536051565782628,
+      -0.10536051565782628
+    ],
+    "bounds_upper": [
+      0.13976194237515863,
+      0.2617993877991494,
+      0.09531017980432493,
+      0.09531017980432493,
+      0.09531017980432493,
+      0.09531017980432493,
+      0.09531017980432493,
+      0.09531017980432493,
+      0.09531017980432493,
+      0.09531017980432493
+    ]
+  },
+  "files_sha256": {
+    "scripts/dre_v1p1_core.py": "6c22c10e3f4accc2c2c7b6ed1be4fadef340e93938518933eb6606249958991b",
+    "scripts/train_dre_v1p1.py": "b80f9a50ce90e6336ff5c9878e090fffe4ed50e8fcca4f15b29f4a0651ca0e26",
+    "scripts/run_dre_v1p1_suite.py": "605b39e719edd758b35ada814b33f5e6fcce5ed2a754372322e1a30a98ae0e51",
+    "scripts/finalize_dre_v1p1_results.py": "c766ebf480808dd270fba4eb2ad37c7dadda9e65d92970ba3296ce4af5e4cb9c",
+    "scripts/test_dre_v1p1.py": "c72ae65c15b5372d8fd7f78368633bcf21bc5f79bb73ff5529799107ecb50e6e",
+    "scripts/train_rar.py": "40330f5f827e1a4601121dc82ddfeef2db91f76d9391b2cdce3f1866cae51d28",
+    "scripts/train_erm.py": "e26e801d925b895dfaa6d7a324e1ced9a8a56303373bcbaa83833b9ac050b2b9",
+    "scripts/finalize_results.py": "2bbfff4454712c5c6fa9129631d52b9cb1f0b9517fc2ed4a034e3fc309815b63",
+    "Recover-and-Resample/nets/agcn/agcn.py": "c1f28513c55fbf55d1eaec2e471906791559634f58b1b4c585f3934da2b452cd",
+    "Recover-and-Resample/feeders/rotation_aug.py": "523b20261e5a7ba1b8c782a03325a1492e97699bdea0dd2e86a5fe78a633951f",
+    "Recover-and-Resample/main/train_3domain_ours.py": "351491295929df3213f4e4ad0184934a86d61e4e336dd992dfb551c7886d464d",
+    "Recover-and-Resample/main/w_transforms.py": "1da66247262bed146d436e6fffd875007cbfb2171eed770a4628ee5353ad32c9",
+    "Recover-and-Resample/main/linear_extrapolation.py": "005f6e5e936a23116f3490b9556d75ba6e123a326e55a5f7bb4af69171b7031a",
+    "scripts/freeze_dre_v1p1.py": "0d3c447400570870daab477448819d87d7aabdb1388ebcee2d96fadfdf186c6d",
+    "scripts/inherit_dre_v1_warmup.py": "fdb3a804567f77090b38d26693315619711ed6755022e38e4a26bb0f559fd6ef",
+    "outputs/DRE_v1p1_seed0_protocol.md": "7753e1a36db4bd69b27f0556f0da6e5d1bddc8a8b56d88441b66955db0079243",
+    "data/common18/xsub64/ntu/train_data_joint.npy": "02e956eed572b587c78c6d07b57ba4ace6333f4f78781027aa244d6db5ff3d60",
+    "data/common18/xsub64/ntu/train_label.pkl": "6f929892b98ddd611413f4f64c0e36e99f3834cec244e11288df9c315c077b83",
+    "data/common18/xsub64/etriA/train_data_joint.npy": "8ceda74ca0df02cdaae21a1336527c4dd16182b4476678a6d97b2d8b47da0fa8",
+    "data/common18/xsub64/etriA/train_label.pkl": "8c22fe62eb94570d86adcf74de709506b2af75de05abe440cc48328dd0417715"
+  },
+  "teachers": {
+    "N": {
+      "files_sha256": {
+        "D:\\DG\\runs\\RAR_N_seed0\\last.pt": "c65d0746fab8bf412d55879b64ecb8c602c7d5e0b6679cd74d241445910e1d6f",
+        "D:\\DG\\runs\\RAR_N_seed0\\config.json": "eef661d324c639a11be2873a6487014b2d2fd10b7fb95ffd5e12c66da77da2d5",
+        "D:\\DG\\runs\\RAR_N_seed0\\results.json": "da900ba589cc311426e55fa791c19c3e34dccbab6cda6b3daf9acf1eada39208",
+        "D:\\DG\\runs\\RAR_N_seed0\\environment.json": "c509be6b0bea7bad39c680ee7761abc610b21e354925e307a4122b06b8fbbb4a"
+      }
+    },
+    "EA": {
+      "files_sha256": {
+        "D:\\DG\\runs\\RAR_EA_seed0\\last.pt": "8edbeab549d01b8090f89b0ac4feb907389b6ef03d8480a2b3e7e128dc47aadc",
+        "D:\\DG\\runs\\RAR_EA_seed0\\config.json": "5db5e93a6eb7e9b5270b62e0498bc0da842cd47efb98bb7ed5ff7269a1bdcac4",
+        "D:\\DG\\runs\\RAR_EA_seed0\\results.json": "4a304d620a48ff1c9ba6acd1122896aa074a7d452938d8d76d4903051cca1950",
+        "D:\\DG\\runs\\RAR_EA_seed0\\environment.json": "c509be6b0bea7bad39c680ee7761abc610b21e354925e307a4122b06b8fbbb4a"
+      }
+    }
+  },
+  "repair": {
+    "original_protocol_sha256": "1b07d6c387d66751666dbaf78e0671a90735e2dea05370ef0d70d9b708f33ccf",
+    "original_run": "D:\\DG\\runs\\DRE_v1_N_seed0",
+    "inherited_epochs": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "change": "sqrt(q).square() -> q in inner objective; same objective and hyperparameters"
+  },
+  "source_label_sha256": {
+    "N": "6f929892b98ddd611413f4f64c0e36e99f3834cec244e11288df9c315c077b83",
+    "EA": "8c22fe62eb94570d86adcf74de709506b2af75de05abe440cc48328dd0417715"
+  },
+  "delivery_directory": "D:\\DG\\outputs\\DRE_v1p1_seed0_delivery",
+  "checks_sha256": "3efbbfaed8ae71ff559ce37e2f9c97339c56a48acd223478d964d1daa5ae51fd",
+  "smoke_sha256": {
+    "N": "432abb5570a5bc716503e937df02b25a754b5f2c1cab7eaf7ec43228caf97f91",
+    "EA": "2c363e767e92f164fe6e85c60456a9f20410d565dcc496c6645b5422fc49928b"
+  }
+}

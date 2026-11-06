@@ -1,0 +1,28 @@
+{
+  "N": {
+    "source": "N",
+    "seed": 0,
+    "epoch": 50,
+    "rule": "same source, fixed final epoch50, not target-best; eval and frozen",
+    "checkpoint_file_sha256": "c65d0746fab8bf412d55879b64ecb8c602c7d5e0b6679cd74d241445910e1d6f",
+    "checkpoint_model_sha256": "f61482a0a83d1e1284cabcabca24f60317ada0a2c72fd873ef825e053d623a22",
+    "initialization": "student starts random seed0, not from teacher",
+    "KL_weight": 0.25,
+    "temperature": 2,
+    "mask": "teacher argmax(original rotated source view) equals source label",
+    "checkpoint_included": false
+  },
+  "EA": {
+    "source": "EA",
+    "seed": 0,
+    "epoch": 50,
+    "rule": "same source, fixed final epoch50, not target-best; eval and frozen",
+    "checkpoint_file_sha256": "8edbeab549d01b8090f89b0ac4feb907389b6ef03d8480a2b3e7e128dc47aadc",
+    "checkpoint_model_sha256": "dc9d195b3503714dd99896b7359fd3bf6a58007ae588240a8d571a17ab20f606",
+    "initialization": "student starts random seed0, not from teacher",
+    "KL_weight": 0.25,
+    "temperature": 2,
+    "mask": "teacher argmax(original rotated source view) equals source label",
+    "checkpoint_included": false
+  }
+}

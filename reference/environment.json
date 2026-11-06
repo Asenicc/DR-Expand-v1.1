@@ -1,0 +1,18 @@
+{
+  "N": {
+    "python": "3.10.21 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:35:39) [MSC v.1942 64 bit (AMD64)]",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.2.6",
+    "gpu": "NVIDIA GeForce RTX 5060 Ti",
+    "initial_model_sha256": "8ae1de7a267f3c9b7cc73721f8633ea3142750c4fe4c19f98e1bac366b6a1b23",
+    "parameters": 1116522
+  },
+  "EA": {
+    "python": "3.10.21 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:35:39) [MSC v.1942 64 bit (AMD64)]",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.2.6",
+    "gpu": "NVIDIA GeForce RTX 5060 Ti",
+    "initial_model_sha256": "8ae1de7a267f3c9b7cc73721f8633ea3142750c4fe4c19f98e1bac366b6a1b23",
+    "parameters": 1116522
+  }
+}

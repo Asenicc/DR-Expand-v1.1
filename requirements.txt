@@ -1,0 +1,12 @@
+# Install an appropriate CUDA-enabled torch separately.
+# Historical experiment used torch 2.11.0+cu128 and Python 3.10.21.
+numpy==2.2.6
+PyYAML
+tqdm
+tensorboardX
+ipython
+scipy
+opencv-python
+pandas
+scikit-learn
+networkx

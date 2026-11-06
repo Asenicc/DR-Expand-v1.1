@@ -1,0 +1,55 @@
+{
+  "method": "DR-Expand-v1.1",
+  "passed": true,
+  "final": true,
+  "checked_at": "2026-10-26T20:41:36+08:00",
+  "checks": {
+    "N→E": {
+      "passed": true,
+      "samples": 13350,
+      "balanced_accuracy_percent": 59.33440499490205,
+      "predictions_sha256": "2671f35724d2b66de08a0c9fbe2fa2a96e92efd10faa4e9383ef32950656d8c6",
+      "last_checkpoint_sha256": "d295e5a92983a13e646c0e79d41b5b5edb25483d4f6b5e6fcdd2ec1d1b5cd77c"
+    },
+    "N→P": {
+      "passed": true,
+      "samples": 968,
+      "balanced_accuracy_percent": 78.9515109315883,
+      "predictions_sha256": "d6850f3430ad480632403fec9e05fd16837c01767cdf4994a3d3913b0d1d90d1",
+      "last_checkpoint_sha256": "d295e5a92983a13e646c0e79d41b5b5edb25483d4f6b5e6fcdd2ec1d1b5cd77c"
+    },
+    "EA→N": {
+      "passed": true,
+      "samples": 5212,
+      "balanced_accuracy_percent": 49.085055157308325,
+      "predictions_sha256": "51fb506105215c009c2b9dff129aae5b17f75e7adf8e80315d8e51188d068235",
+      "last_checkpoint_sha256": "cbb6d06d95e8fe933f9721bbd0e27e2a8ab1ed241a777f0de9b803fd130c813b"
+    },
+    "EA→P": {
+      "passed": true,
+      "samples": 968,
+      "balanced_accuracy_percent": 55.44078583779436,
+      "predictions_sha256": "36e5e37c2b8fe5c70eae5d09f396d9e4d1af2712fc954ef6194e1d8ed1165507",
+      "last_checkpoint_sha256": "cbb6d06d95e8fe933f9721bbd0e27e2a8ab1ed241a777f0de9b803fd130c813b"
+    }
+  },
+  "completed_settings": 4,
+  "protocol_sha256": "dd63cfee1f88369eb28c882216f5d680a43b7499990d98e40af502cb48233a2f",
+  "mean_balanced_accuracy_percent": 60.70293923039826,
+  "costs": {
+    "N": {
+      "training_seconds": 8901.277999999933,
+      "search_seconds": 2954.1469999996916,
+      "classifier_updates": 9850,
+      "teacher_pretraining_epochs": 50
+    },
+    "EA": {
+      "training_seconds": 9515.902000000002,
+      "search_seconds": 3169.4440000003524,
+      "classifier_updates": 10600,
+      "teacher_pretraining_epochs": 50
+    }
+  },
+  "recomputed_from_saved_predictions": true,
+  "training_or_inference_performed": false
+}
